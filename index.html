@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대구트립로드</title>
+  <link rel="icon" href="./img/logo/favicon.svg" />
+
+  <link rel="stylesheet" href="./css/reset.css" />
+
+  <!-- font awesome 구동문 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper css 구동문 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- AOS css 구동문 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/button.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- jquery 구동문 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- swiper 구동문 -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <!-- AOS 구동문 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="./js/common.js" defer></script>
+  <!-- script end -->
+</head>
+
+<body>
+  <div class="mobile-wrap">
+    <header>
+      <h1 class="logo">
+        <a href="index.html"><img src="./img/logo/logo.svg" alt="logo" /></a>
+      </h1>
+      <nav class="global-nav">
+        <div class="mobile_shortcut-link">
+          <a href="index.html">HOME</a>
+          <a href="https://www.daegu.go.kr/index.do">대구광역시</a>
+          <a href="#">사이트맵</a>
+        </div>
+        <ul class="first-depth-menu">
+          <li>
+            <a href="#">명품관광코스</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_01.jpg" alt="title_img_01" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>명품관광코스</strong>
+                  <span>대구의 명품관광코스를 둘러보세요</span>
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">대표관광코스<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">대구명품코스</a></li>
+                    <li><a href="#">권역별명품코스</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">나만의 맞춤관광<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">맞춤관광코스 설정</a></li>
+                    <li><a href="#">베스트 맞춤관광코스</a></li>
+                  </ol>
+                </li>
+                <li><a href="#">야간관광</a></li>
+                <li><a href="#">올레길/둘레길 코스</a></li>
+                <li><a href="#">자전거투어 코스</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">관광명소</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_02.jpg" alt="title_img_02" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>관광명소</strong>
+                  <span>대구의 아름다운 장소를 둘러보세요</span>
+                </p>
+              </div>
+              <ul>
+                <li><a href="#">대구12경</a></li>
+                <li><a href="#">대표 관광명소</a></li>
+                <li><a href="#">관광명소 검색</a></li>
+                <li><a href="#">내주변관광지</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">축제</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_03.jpg" alt="title_img_03" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>축제</strong>
+                  <span>다양한 테마의 축제를 즐겨보세요</span>
+                </p>
+              </div>
+              <ul>
+                <li><a href="#">축제캘린더</a></li>
+                <li><a href="#">축제닷컴</a></li>
+                <li><a href="#">공연전시정보</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">숙박/식당/쇼핑</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_04.jpg" alt="title_img_04" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>숙박/식당/쇼핑</strong>
+                  <span>대구의 식도락을 즐겨보세요</span>
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">숙박</a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">숙박정보</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">식당<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">식당정보</a></li>
+                    <li><a href="#">대구푸드</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">쇼핑<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">쇼핑</a></li>
+                    <li><a href="#">친절여행상점</a></li>
+                    <li><a href="#">대구관광 기념품</a></li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">어울림대구</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_05.jpg" alt="title_img_05" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>어울림대구</strong>
+                  <span>대구 여행을 도와드려요</span>
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">여행도우미<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">관광안내소</a></li>
+                    <li><a href="#">문화관광해설사 안내</a></li>
+                    <li><a href="#">관광안내지도 신청</a></li>
+                    <li><a href="#">대구관광안내책자</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">미리보는 대구<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">항공VR</a></li>
+                    <li><a href="#">관광VR</a></li>
+                    <li><a href="#">대구영상</a></li>
+                    <li><a href="#">대구사진</a></li>
+                  </ol>
+                </li>
+                <li><a href="#">대구관광 홍보영상</a></li>
+                <li><a href="#">아카이브</a></li>
+                <li><a href="#">여행후기</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">대구관광</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_06.jpg" alt="title_img_06" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>대구관광</strong>
+                  <span>대구 관광 공지사항 알려드립니다</span>
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">여행소식<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">여행뉴스</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">관광서비스<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">시티투어버스</a></li>
+                    <li><a href="#">관광안내1330</a></li>
+                    <li><a href="#">관광불편신고센터</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">교통<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">공항/역/터미널</a></li>
+                    <li><a href="#">시내대중교통 안내</a></li>
+                    <li><a href="#">주차안내</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">문의 및 건의</a>
+                </li>
+                <li>
+                  <a href="#">자주 묻는 질문</a>
+                </li>
+                <li>
+                  <a href="#">관련사이트</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">3대 문화권</a>
+            <div class="second-depth-menu">
+              <div class="title_area">
+                <div class="title-img_con center">
+                  <img src="./img/header/sub-title_img_07.jpg" alt="title_img_07" />
+                </div>
+                <p class="title-txt_con">
+                  <strong>3대문화권</strong>
+                  <span>신라, 유교, 가야의 3대 문화를 누려보세요</span>
+                </p>
+              </div>
+              <ul>
+                <li><a href="#">3대 문화권 소개</a></li>
+                <li>
+                  <a href="#">3대 문화형 체험기반<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">버츄얼 체험존</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">지역전문가 및 기업육성<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">3대문화대학</a></li>
+                    <li><a href="#">대구관광스타트업</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">오딧세이 프로젝트<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">오딧세이 체험 콘텐츠</a></li>
+                  </ol>
+                </li>
+                <li>
+                  <a href="#">신신가유 프로젝트<span><i class="fa-solid fa-plus"></i></span></a>
+                  <ol class="third-depth-menu">
+                    <li><a href="#">건축문화기행</a></li>
+                    <li><a href="#">신한류 체험 관광상품</a></li>
+                  </ol>
+                </li>
+                <li><a href="#">내추럴대구 프로젝트</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="private-menu">
+        <i class="fa-solid fa-magnifying-glass icon_search"></i>
+        <i class="fa-solid fa-globe icon_language"></i>
+        <i class="fa-solid fa-sitemap"></i>
+        <div class="bars"></div>
+        <div class="closeMenu"></div>
+      </div>
+      <div class="search-area">
+        <form action>
+          <div class="search-bar">
+            <input type="search" id="search-word" placeholder="검색어를 입력해주세요" autocomplete="on" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="hashtags_con">
+            <span>#동성로</span>
+            <span>#팔공산</span>
+            <span>#역사</span>
+            <span>#이월드</span>
+            <span>#공원</span>
+          </div>
+          <div class="btn_close">
+            <span>닫기</span>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </form>
+      </div>
+      <ul class="language">
+        <li>korean</li>
+        <li>english</li>
+        <li>中文(简体)</li>
+        <li>中文(繁體)</li>
+        <li>日本語</li>
+      </ul>
+    </header>
+    <section class="sec sec-hero">
+      <div class="swiper heroSlide">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img src="./img/sec1/hero-img_01.jpg" alt="hero-img" />
+            <div class="hero-txt_con">
+              <span>지금 여기는</span>
+              <strong>계산 성당</strong>
+              <p>
+                이국적인 성당을 거닐며 100년의<br />
+                역사를 돌아보는 여행지
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <img src="./img/sec1/hero-img_02.jpg" alt="hero-img" />
+            <div class="hero-txt_con">
+              <span>지금 여기는</span>
+              <strong>김광석 다시 그리기 길</strong>
+              <p>
+                김광석의 음악 인생이 녹아있는<br />
+                골목에서 감상할 수 있는 벽화 길
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <img src="./img/sec1/hero-img_03.jpg" alt="hero-img" />
+            <div class="hero-txt_con">
+              <span>지금 여기는</span>
+              <strong>대구숲</strong>
+              <p>
+                사계절 내내 친환경 레저 체험을<br />
+                즐길 수 있는 에코 테마파크
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <img src="./img/sec1/hero-img_04.jpg" alt="hero-img" />
+            <div class="hero-txt_con">
+              <span>지금 여기는</span>
+              <strong>수성못</strong>
+              <p>
+                수변 산책과 야경을 한 자리에서<br />
+                즐길 수 있는 여행지
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <img src="./img/sec1/hero-img_05.jpg" alt="hero-img" />
+            <div class="hero-txt_con">
+              <span>지금 여기는</span>
+              <strong>83타워</strong>
+              <p>
+                도심 속에 위치한 두류공원에서<br />
+                한 눈에 감상할 수 있는 대구 전경
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="hero-title">
+          <img src="./img/logo/title_daeguroad_white.png" alt="hero-title" />
+          <p class="dayWeather-txt"><span id="todayDate"></span> <span id="weather"></span> <span id="climinate"></span></p>
+        </div>
+        <div class="swiper-button-next heroNext"></div>
+        <div class="swiper-button-prev heroPrev"></div>
+        <div class="swiper-pagination heroPagenation"></div>
+      </div>
+    </section>
+    <section class="sec-quick">
+      <div class="wrap swiper quickSlide">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_01.png" alt="quick"></a>
+            <span>관광안내1330</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_02.png" alt="quick"></a>
+            <span>관광안내소</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_03.png" alt="quick"></a>
+            <span>문화관광해설사</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_04.png" alt="quick"></a>
+            <span>대구시티투어</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_05.png" alt="quick"></a>
+            <span>스탬프트레일</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_06.png" alt="quick"></a>
+            <span>무장애관광</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_07.png" alt="quick"></a>
+            <span>길찾기</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_08.png" alt="quick"></a>
+            <span>문의 및 건의</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_09.png" alt="quick"></a>
+            <span>관광불편신고</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_10.png" alt="quick"></a>
+            <span>교통안내</span>
+          </li>
+          <li class="swiper-slide center">
+            <a href="#"><img src="./img/quickbutton/quick_11.png" alt="quick"></a>
+            <span>기상정보</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="sec sec-festival" data-aos="fade-right">
+      <h2 class="sec-title">
+        <p><strong>제대로</strong> 즐기는 대구</p>
+        <span>대구의 다채로운 축제 및 공연을 즐겨보세요</span>
+      </h2>
+      <div class="festival-info">
+        <div class="main-info">
+          <div class="mainInfo-img_con">
+            <img src="./img/sec2/festival_main-img.jpg" alt="#" />
+          </div>
+          <div class="mainInfo-txt_con">
+            <strong>festival</strong>
+            <p>
+              대구만의 다양한 축제에서 연인, 친구, 가족과 함께<br />잊지못할
+              추억을 남겨보세요
+            </p>
+            <a class="btn_detail" href="#">자세히보기</a>
+          </div>
+        </div>
+        <ul class="sub-info_con">
+          <li class="sub-info">
+            <a href="#"></a>
+            <div class="subInfo-img_con">
+              <img src="./img/sec2/festival_sub-img_01.jpg" alt="#" />
+            </div>
+            <div class="subInfo-txt_con">
+              <strong>팔공산 벚꽃 축제</strong>
+              <p>팔공산에서 만나는 벚꽃의 향연</p>
+            </div>
+          </li>
+          <li class="sub-info">
+            <a href="#"></a>
+            <div class="subInfo-img_con">
+              <img src="./img/sec2/festival_sub-img_02.jpg" alt="#" />
+            </div>
+            <div class="subInfo-txt_con">
+              <strong>컬러풀 대구 페스티벌</strong>
+              <p>도심형 거리 공연 예술 축제</p>
+            </div>
+          </li>
+          <li class="sub-info">
+            <a href="#"></a>
+            <div class="subInfo-img_con">
+              <img src="./img/sec2/festival_sub-img_03.jpg" alt="#" />
+            </div>
+            <div class="subInfo-txt_con">
+              <strong>대구 치킨 페스티벌</strong>
+              <p>치킨의 고장 대구에서 열리는 축제</p>
+            </div>
+          </li>
+        </ul>
+        <div class="btn_plus"></div>
+      </div>
+      <div class="performance-info">
+        <div class="main-info">
+          <div class="mainInfo-img_con">
+            <img src="./img/sec2/performance_main-img.jpg" alt="#" />
+          </div>
+          <div class="mainInfo-txt_con">
+            <strong>performance</strong>
+            <p>
+              공연 문화 도시인 대구에서<br />문화 · 예술 공연을 감상해보세요
+            </p>
+            <a class="btn_detail" href="#">자세히보기</a>
+          </div>
+        </div>
+        <ul class="sub-info_con">
+          <li class="sub-info">
+            <a href="#"></a>
+            <div class="subInfo-img_con">
+              <img src="./img/sec2/performance_sub-img_01.jpg" alt="#" />
+            </div>
+            <div class="subInfo-txt_con">
+              <strong>오페라 공연</strong>
+              <p>오페라하우스에서 즐기는 오페라 공연</p>
+            </div>
+          </li>
+          <li class="sub-info">
+            <a href="#"></a>
+            <div class="subInfo-img_con">
+              <img src="./img/sec2/performance_sub-img_02.jpg" alt="#" />
+            </div>
+            <div class="subInfo-txt_con">
+              <strong>뮤지컬</strong>
+              <p>뮤지컬 중심 도시 대구의 뮤지컬 공연</p>
+            </div>
+          </li>
+          <li class="sub-info">
+            <a href="#"></a>
+            <div class="subInfo-img_con">
+              <img src="./img/sec2/performance_sub-img_03.jpg" alt="#" />
+            </div>
+            <div class="subInfo-txt_con">
+              <strong>국악</strong>
+              <p>우리나라 정서가 담긴 국악공연</p>
+            </div>
+          </li>
+        </ul>
+        <div class="btn_plus"></div>
+      </div>
+    </section>
+    <section class="sec sec-tour" data-aos="fade-left">
+      <div class="wrap">
+        <h2 class="sec-title">
+          <p><strong>멋과 맛</strong>이 있는 대구</p>
+          <span>대구의 맛과 멋을 느껴보세요</span>
+        </h2>
+        <div class="tourHashTags hashtags_con">
+          <span class="on">#감성 여행지</span>
+          <span>#대구맛집</span>
+        </div>
+        <div class="tourList moodTour on">
+          <div class="slide_con">
+            <ul class="tourSlide">
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/moodTour_img_01.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><strong>대봉동 감성카페</strong><span>에서 커피한잔</span></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/moodTour_img_02.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><strong>반월당 골목 23</strong><span> 피크닉 감성</span></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/moodTour_img_03.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><strong>비슬산 자연휴양림</strong><span> 낭만 캠핑</span></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/moodTour_img_04.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><strong>불로동 고분군</strong><span>에서 산책하며 힐링</span></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/moodTour_img_05.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>유럽감성 대구 </span><strong>제일교회</strong></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/moodTour_img_06.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><strong>북성로 대화의 장</strong><span>에서 수제품 구경</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="moodPrev tourPrev center"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="moodNext tourNext center"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+        <div class="tourList foodTour">
+          <div class="slide_con">
+            <ul class="tourSlide">
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/foodTour_img_01.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>진미식당의 얼큰한 </span><strong>대창전골</strong></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/foodTour_img_02.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>복주소막창에서 고소한 </span><strong>소막창</strong></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/foodTour_img_03.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>녹양구이에서 살살 녹는 </span><strong>뭉티기</strong></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/foodTour_img_04.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>형제수산의 특별한 </span><strong>줄가자미회</strong></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/foodTour_img_05.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>여원찜갈비에서 </span><strong>동인동찜갈비</strong></p>
+              </li>
+              <li>
+                <a href="#"></a>
+                <div class="tour-img_con"><img src="./img/sec3/foodTour_img_06.jpg" alt="moodTour"></div>
+                <p class="tour-txt_con"><span>동성로 떢볶이집의 </span><strong>즉석떡볶이</strong></p>
+              </li>
+            </ul>
+          </div>
+          <div class="foodPrev tourPrev center"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="foodNext tourNext center"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec-sns" data-aos="fade-right">
+      <div class="wrap">
+        <h2 class="sec-title">
+          <p><strong>SNS</strong> 속 대구</p>
+          <span>SNS에서 만나는 대구 여행</span>
+        </h2>
+        <div class="sns-grid">
+          <div class="facebook-area">
+            <figure>
+              <a href="https://www.facebook.com/daegutour/"></a>
+              <img src="./img/sec4/sns_facebook.jpg" alt="facebook">
+              <figcaption class="center"><i class="fa-brands fa-facebook"></i></figcaption>
+            </figure>
+          </div>
+          <div class="insta-area">
+            <figure>
+              <a href="https://www.instagram.com/visitdaegu/"></a>
+              <img src="./img/sec4/sns_insta.jpg" alt="insta">
+              <figcaption class="center"><i class="fa-brands fa-instagram"></i></figcaption>
+            </figure>
+          </div>
+          <div class="youtube-area">
+            <div><iframe src="https://www.youtube.com/embed/QQAXX9ARuvg" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+          </div>
+          <div class="blog-area">
+            <figure>
+              <a href="https://blog.naver.com/daeguvisit"></a>
+              <img src="./img/sec4/sns_blog.jpg" alt="blog">
+              <figcaption class="center"><i class="fa-brands fa-blogger-b"></i></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec-course" data-aos="fade-left">
+      <div class="wrap">
+        <h2 class="sec-title">
+          <p><strong>대구트립로드</strong></p>
+          <span>대구에서 여행의 재미를 만끽하세요</span>
+        </h2>
+        <div class="trip-course">
+          <ul class="map-list">
+            <li class="on">
+              <img src="./img/sec5/daegu_trip-map_01.png" alt="daegu_trip-map">
+              <div class="map-icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="./img/icon/car.png" alt="car">
+              </div>
+            </li>
+            <li>
+              <img src="./img/sec5/daegu_trip-map_02.png" alt="daegu_trip-map">
+              <div class="map-icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="./img/icon/car.png" alt="car">
+              </div>
+            </li>
+            <li>
+              <img src="./img/sec5/daegu_trip-map_03.png" alt="daegu_trip-map">
+              <div class="map-icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="./img/icon/car.png" alt="car">
+              </div>
+            </li>
+            <li>
+              <img src="./img/sec5/daegu_trip-map_04.png" alt="daegu_trip-map">
+              <div class="map-icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <img src="./img/icon/car.png" alt="car">
+              </div>
+            </li>
+          </ul>
+          <div class="course-area">
+            <h3>추천여행코스</h3>
+            <ul class="course_tab-btn">
+              <li class="on">대구 속 시간여행</li>
+              <li>이렇게 좋을수가</li>
+              <li>금수강산 느림보 코스</li>
+              <li>팔공산 힐링코스</li>
+            </ul>
+            <ul class="course-list">
+              <li class="on">
+                <div class="course-txt_con">
+                  <h4>대구 속 시간여행</h4>
+                  <span>"컬러풀한 도심 한 가운데 옛 이야기"</span>
+                  <p>이월드 / 83타워 → 두류공원 → 서문시장 → <br>
+                    삼성장회 옛터(이병철 고택) → 근대 골목 → <br>
+                    청라언덕 → 제일교회 → 약령시 → <br>
+                    동성로 카페거리 → 동인동 찜갈비 골목 → <br>
+                    김광석 다시 그리기 길 </p>
+                  <a class="btn_detail" href="#">자세히보기</a>
+                </div>
+                <div class="course-img_con center">
+                  <img src="./img/sec5/trip-course_01.jpg" alt="trip-course">
+                </div>
+              </li>
+              <li>
+                <div class="course-txt_con">
+                  <h4>이렇게 좋을수가</h4>
+                  <span>"대구에서 대구사람처럼 여행하기"</span>
+                  <p>안지랑 곱창골목 → 앞산 카페거리 → <br>
+                    수성못 → 들안길 먹거리 타운 → <br>
+                    대구 미술관 → 대구 스타디움 → 대구숲 → <br>
+                    가창 먹거리 타운 → 녹동 서원 → <br>
+                    FOREST 스파밸리 </p>
+                  <a class="btn_detail" href="#">자세히보기</a>
+                </div>
+                <div class="course-img_con center">
+                  <img src="./img/sec5/trip-course_02.jpg" alt="trip-course">
+                </div>
+              </li>
+              <li>
+                <div class="course-txt_con">
+                  <h4>금수강산 느림보 코스</h4>
+                  <span>"낙동강을 따라 즐기는 유유자적 여유"</span>
+                  <p>디아크 / 강정보고령보 → <br>
+                    호산동 메타세콰이어숲길 → <br>
+                    대구 수목원 → 국립대구과학관 → <br>
+                    도동서원 → 대니산 페러글라이딩 체험 → <br>
+                    현풍백년 도깨비 시장 → <br>
+                    비슬산 참꽃 군락지 </p>
+                  <a class="btn_detail" href="#">자세히보기</a>
+                </div>
+                <div class="course-img_con center">
+                  <img src="./img/sec5/trip-course_03.jpg" alt="trip-course">
+                </div>
+              </li>
+              <li>
+                <div class="course-txt_con">
+                  <h4>팔공산 힐링코스</h4>
+                  <span>"역사의 흔적을 따라 즐기는 명산에서 힐링"</span>
+                  <p>대한 수목원 → 용진마을 → 부인사 → <br>
+                    구암 팜 스테이 → 봉무공원 → <br>
+                    팔공산 올레길 → 동화사 템플스테이→ <br>
+                    갓바위 → 불로동 고분군<br>
+                    → 도동 측백나무 숲</p>
+                  <a class="btn_detail" href="#">자세히보기</a>
+                </div>
+                <div class="course-img_con center">
+                  <img src="./img/sec5/trip-course_04.jpg" alt="trip-course">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec-plan" data-aos="fade-down">
+      <div class="wrap">
+        <h2 class="sec-title">
+          <p>여기는 <strong>대구</strong></p>
+          <span>즐거움이 가득한 대구 여행을 계획해보세요</span>
+        </h2>
+        <div class="plan-con">
+          <div class="sub-plan-item">
+            <h5>대구에서의 하루</h5>
+            <p>
+              <span class="center"><img src="./img/icon/hotel.png" alt="hotel-icon"></span>
+              <span>편안한 숙소에서 피로를 풀어보세요</span>
+            </p>
+            <a href="#" class="btn_detail">자세히보기</a>
+          </div>
+          <div class="sub-plan-item">
+            <h5>여행지도</h5>
+            <p>
+              <span class="center"><img src="./img/icon/map.png" alt="map-icon"></span>
+              <span>대구의 관광 안내 지도를 보내드립니다</span>
+            </p>
+            <a href="#" class="btn_detail">자세히보기</a>
+          </div>
+          <div class="main-plan-item">
+            <h5>
+              <strong>맞춤관광</strong>
+              <span>나만의 코스로 여행 계획을 만들어보세요</span>
+            </h5>
+            <ul class="tour-plan_con">
+              <li class="tour-when_btn">
+                <div class="plan-txt_con">
+                  <div class="icon-box center"><i class="fa-solid fa-calendar-plus"></i></div>
+                  <span>언제 갈까요?</span>
+                </div>
+                <ul class="plan_sub-menu">
+                  <li>봄</li>
+                  <li>여름</li>
+                  <li>가을</li>
+                  <li>겨울</li>
+                </ul>
+              </li>
+              <li class="tour-days_btn">
+                <div class="plan-txt_con">
+                  <div class="icon-box center"><i class="fa-solid fa-house-circle-check"></i></div>
+                  <span>여행 일정은요?</span>
+                </div>
+                <ul class="plan_sub-menu">
+                  <li>당일</li>
+                  <li>1박 2일</li>
+                  <li>2박 3일</li>
+                </ul>
+              </li>
+              <li class="tour-who_btn">
+                <div class="plan-txt_con">
+                  <div class="icon-box center"><i class="fa-solid fa-people-group"></i></div>
+                  <span>누구랑 갈까요?</span>
+                </div>
+                <ul class="plan_sub-menu">
+                  <li>혼자</li>
+                  <li>연인</li>
+                  <li>가족</li>
+                  <li>친구</li>
+                </ul>
+              </li>
+              <li class="tour-thema_btn">
+                <div class="plan-txt_con">
+                  <div class="icon-box center"><i class="fa-solid fa-tree-city"></i></div>
+                  <span>여행의 테마는요?</span>
+                </div>
+                <ul class="plan_sub-menu">
+                  <li>자연</li>
+                  <li>감성</li>
+                  <li>맛집</li>
+                  <li>역사/문화/예술</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="sub-plan-item">
+            <h5>친절한 여행상점</h5>
+            <p>
+              <span class="center"><img src="./img/icon/shop.png" alt="shop-icon"></span>
+              <span>대구의 특산품과 기념품을 둘러보세요</span>
+            </p>
+            <a href="#" class="btn_detail">자세히보기</a>
+          </div>
+          <div class="sub-plan-item">
+            <h5>미리보는 대구</h5>
+            <p>
+              <span class="center"><img src="./img/icon/vr.png" alt="vr-icon"></span>
+              <span>생생한 VR로 대구의 매력을 경험하세요</span>
+            </p>
+            <a href="#" class="btn_detail">자세히보기</a>
+          </div>
+        </div>
+        <div class="noti-box">
+          <h6>공지사항</h6>
+          <ul class="noti-list">
+            <li>
+              <a href="#"></a>
+              <p>2022년 한국관광 품질인증 신규업소 공모안내</p>
+              <span>22.06.17</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <p>대구인물 기행 투어 가이드 모집(22.2.25~22.3.11)</p>
+              <span>22.02.28</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <p>2022년 한국관광 품질인증 신규업소 공모안내</p>
+              <span>22.06.17</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <p>대구인물 기행 투어 가이드 모집(22.2.25~22.3.11)</p>
+              <span>22.02.28</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <p>2022년 한국관광 품질인증 신규업소 공모안내</p>
+              <span>22.06.17</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <p>대구인물 기행 투어 가이드 모집(22.2.25~22.3.11)</p>
+              <span>22.02.28</span>
+            </li>
+          </ul>
+          <div class="btn_playPause">
+            <i class="fa-solid fa-chevron-up"></i>
+            <i class="fa-solid fa-equals"></i>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <img class="foot-logo" src="./img/logo/footer_logo.png" alt="footerlogo">
+        <ul class="foot-info">
+          <li><span>(41911) 대구광역시 중구 공평로 88 (동인동1가)</span> <span>전화 : 053.803.6513</span></li>
+          <li>Copyright(c) DAEGU METROPOLITAN CITY. All rights reserved.</li>
+          <li>본 홈페이지에 게시된 이메일주소의 자동 수집을 거부하며 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</li>
+        </ul>
+        <img class="foot-icon" src="./img/logo/img_wa.png" alt="footericon">
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
