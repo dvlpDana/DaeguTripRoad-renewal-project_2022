@@ -59,10 +59,6 @@ Demo : [https://dvlpdana.github.io/DaeguTripRoad-renewal-project_2022/](https://
 
   function timeLoad() {
     const todayDate = new Date();
-    // const month = todayDate.getMonth() + 1;
-    // const date = todayDate.getDate();      
-    // const hours = todayDate.getHours();
-    // const minutes = todayDate.getSeconds();
 
     // padding start로 두 자리수 만들기
     const month = String(todayDate.getMonth() + 1).padStart(2, "0");
